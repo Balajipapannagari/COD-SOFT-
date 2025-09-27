@@ -16,14 +16,14 @@ def add_contact():
         "address": address
     }
     contacts.append(contact)
-    print("✅ Contact added successfully!")
+    print(" Contact added successfully!")
 
 
 def view_contacts():
     if not contacts:
         print("No contacts found.")
         return
-    print("\n📒 Contact List:")
+    print("\n Contact List:")
     for i, contact in enumerate(contacts, 1):
         print(f"{i}. {contact['name']} - {contact['phone']}")
 
@@ -40,7 +40,7 @@ def search_contact():
             print(f"Email: {c['email']}")
             print(f"Address: {c['address']}")
     else:
-        print("❌ Contact not found.")
+        print(" Contact not found.")
 
 
 def update_contact():
@@ -53,9 +53,9 @@ def update_contact():
             new_address = input("New Address: ") or c["address"]
 
             c["phone"], c["email"], c["address"] = new_phone, new_email, new_address
-            print("✅ Contact updated successfully!")
+            print("Contact updated successfully!")
             return
-    print("❌ Contact not found.")
+    print("Contact not found.")
 
 
 def delete_contact():
@@ -63,9 +63,9 @@ def delete_contact():
     for c in contacts:
         if c["name"] == search:
             contacts.remove(c)
-            print("🗑️ Contact deleted successfully!")
+            print("Contact deleted successfully!")
             return
-    print("❌ Contact not found.")
+    print("Contact not found.")
 
 
 # Main program loop
@@ -91,7 +91,7 @@ while True:
     elif choice == '5':
         delete_contact()
     elif choice == '6':
-        print("👋 Exiting... Goodbye!")
+        print(" Exiting... Goodbye!")
         break
     else:
-        print("❌ Invalid choice. Please try again.")
+        print(" Invalid choice. Please try again.")
