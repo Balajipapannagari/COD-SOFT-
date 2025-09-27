@@ -1,6 +1,6 @@
 # Simple Calculator in Python
 
-# Take input from the user
+
 num1 = float(input("Enter first number: "))
 num2 = float(input("Enter second number: "))
 
@@ -12,7 +12,7 @@ print("4. Division (/)")
 
 choice = input("Enter operation (+, -, *, /): ")
 
-# Perform calculation
+
 if choice == '+':
     result = num1 + num2
     print(f"Result: {num1} + {num2} = {result}")
