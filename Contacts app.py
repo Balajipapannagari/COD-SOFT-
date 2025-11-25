@@ -1,8 +1,4 @@
-# Contact Management System in Python
-
-contacts = []  # list to store all contacts as dictionaries
-
-
+contacts = []  
 def add_contact():
     name = input("Enter Name: ")
     phone = input("Enter Phone Number: ")
@@ -34,7 +30,7 @@ def search_contact():
 
     if found:
         for c in found:
-            print(f"\n🔎 Found Contact:")
+            print(f"\n Found Contact:")
             print(f"Name: {c['name']}")
             print(f"Phone: {c['phone']}")
             print(f"Email: {c['email']}")
@@ -67,8 +63,6 @@ def delete_contact():
             return
     print("Contact not found.")
 
-
-# Main program loop
 while True:
     print("\n===== Contact Management System =====")
     print("1. Add Contact")
@@ -95,3 +89,4 @@ while True:
         break
     else:
         print(" Invalid choice. Please try again.")
+
