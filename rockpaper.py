@@ -41,6 +41,7 @@ while True:
     if play_again != "yes":
         print("\nFinal Scores:")
         print(f" You: {user_score}")
-        print(f"💻 Computer: {computer_score}")
+        print(f" Computer: {computer_score}")
         print("Thanks for playing! Goodbye.")
         break
+
